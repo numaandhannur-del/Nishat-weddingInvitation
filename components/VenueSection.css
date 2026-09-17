@@ -1,0 +1,98 @@
+.venue-section {
+  text-align: center;
+  padding-top: 0.35rem;
+  position: relative;
+  z-index: 5;
+}
+
+.venue-section__divider {
+  width: clamp(44px, 12vw, 56px);
+  height: 1px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0.4rem auto 0.75rem;
+}
+
+.venue-section__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+
+.venue-section__address {
+  font-family: var(--font-serif);
+  font-size: clamp(0.88rem, 2.8vw, 1rem);
+  color: var(--navy);
+  opacity: 0.82;
+  margin-bottom: clamp(0.65rem, 2vw, 0.9rem);
+}
+
+.venue-section__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: clamp(0.75rem, 2.5vw, 1rem);
+}
+
+.qr-wrapper {
+  padding: 8px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid rgba(26, 45, 90, 0.08);
+  box-shadow: 0 3px 14px rgba(26, 45, 90, 0.1);
+}
+
+.qr-image,
+.qr-svg {
+  display: block;
+  width: clamp(100px, 28vw, 128px);
+  height: clamp(100px, 28vw, 128px);
+  object-fit: contain;
+}
+
+.qr-label {
+  font-family: var(--font-serif);
+  font-size: clamp(0.65rem, 2vw, 0.72rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+}
+
+.maps-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: clamp(0.7rem, 2.5vw, 0.85rem) clamp(1.25rem, 4vw, 1.65rem);
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--navy) 0%, #2a4078 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: clamp(0.82rem, 2.8vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  box-shadow: 0 3px 14px rgba(26, 45, 90, 0.25);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.maps-btn:hover {
+  box-shadow: 0 5px 20px rgba(26, 45, 90, 0.35);
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.maps-btn__icon {
+  width: clamp(16px, 4.5vw, 18px);
+  height: clamp(16px, 4.5vw, 18px);
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.maps-btn__text {
+  white-space: nowrap;
+}

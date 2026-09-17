@@ -1,0 +1,18 @@
+.sparkles {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e8d5a3 0%, transparent 70%);
+  box-shadow: 0 0 6px 1px rgba(201, 168, 76, 0.4);
+}
+
+.sparkle--gold {
+  background: radial-gradient(circle, #f0e0b0 0%, transparent 70%);
+  box-shadow: 0 0 8px 2px rgba(201, 168, 76, 0.5);
+}

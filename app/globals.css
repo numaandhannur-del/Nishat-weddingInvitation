@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #1a2d5a;
+  --navy-light: #2a4078;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a3;
+  --rose: #c45c7a;
+  --rose-light: #e8a0b4;
+  --blush: #f4c4cb;
+  --sky: #a8cce8;
+  --sage: #8fb89a;
+  --cream: #faf8f5;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
+  background: #140f2d;
+  color: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--blush);
+  color: var(--navy);
+}

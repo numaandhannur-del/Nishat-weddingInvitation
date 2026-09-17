@@ -1,0 +1,12 @@
+.corner-floral {
+  position: absolute;
+  width: clamp(70px, 18vw, 100px);
+  height: clamp(58px, 15vw, 82px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.corner-floral--top-left { top: 4px; left: 4px; }
+.corner-floral--top-right { top: 4px; right: 4px; transform: scaleX(-1); }
+.corner-floral--bottom-left { bottom: 4px; left: 4px; transform: scaleY(-1); }
+.corner-floral--bottom-right { bottom: 4px; right: 4px; transform: scale(-1); }

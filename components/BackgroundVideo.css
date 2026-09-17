@@ -1,0 +1,57 @@
+.bg-video {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2d0a23 0%, #0f2318 50%, #140f2d 100%);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.bg-video--active {
+  opacity: 1;
+}
+
+.bg-video__palace {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3) saturate(0.7);
+}
+
+.bg-video__layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  animation: slowZoom 24s ease-in-out infinite alternate;
+}
+
+.bg-video__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(45, 10, 35, 0.8) 0%,
+    rgba(15, 35, 25, 0.75) 45%,
+    rgba(20, 15, 45, 0.82) 100%
+  );
+  z-index: 1;
+}
+
+.bg-video__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.55) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}

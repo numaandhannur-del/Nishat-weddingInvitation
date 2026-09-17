@@ -1,0 +1,201 @@
+.invitation-card {
+  width: 100%;
+  position: relative;
+}
+
+.invitation-card__glow {
+  position: absolute;
+  inset: -8%;
+  background: radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.invitation-card__inner {
+  position: relative;
+  background: var(--cream);
+  border-radius: 12px;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(201, 168, 76, 0.12);
+  overflow: hidden;
+  min-height: calc(100dvh - max(1.5rem, env(safe-area-inset-top)) - max(1.5rem, env(safe-area-inset-bottom)));
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation-card__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.6s ease;
+}
+
+.invitation-card__bg--ready {
+  opacity: 0.14;
+}
+
+.invitation-card__wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 248, 245, 0.94) 0%,
+    rgba(250, 248, 245, 0.9) 50%,
+    rgba(250, 248, 245, 0.93) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.invitation-card__body {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: clamp(0.35rem, 1.5vw, 0.65rem);
+  padding: clamp(1.5rem, 4vw, 2.25rem) clamp(1.25rem, 4vw, 2rem) clamp(1.25rem, 3.5vw, 1.75rem);
+}
+
+.invitation-card__body > * {
+  backface-visibility: hidden;
+}
+
+.rings-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.rings-icon svg {
+  width: clamp(64px, 16vw, 80px);
+  height: auto;
+}
+
+.invitation-card__header {
+  font-family: var(--font-display);
+  font-size: clamp(0.65rem, 2.2vw, 0.78rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+}
+
+.invitation-card__names {
+  font-family: var(--font-script);
+  font-size: clamp(2.4rem, 9.5vw, 3.4rem);
+  color: var(--navy);
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: clamp(0.2rem, 0.8vw, 0.35rem);
+}
+
+.invitation-card__sub,
+.invitation-card__celebrate {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+  color: var(--navy);
+  opacity: 0.88;
+  line-height: 1.45;
+}
+
+.invitation-card__celebrate {
+  margin-bottom: clamp(0.75rem, 2.5vw, 1.1rem);
+  font-style: italic;
+}
+
+.invitation-card__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 2.5vw, 1rem);
+  margin-bottom: clamp(0.35rem, 1.5vw, 0.6rem);
+}
+
+.date-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.date-side--left {
+  align-items: flex-end;
+}
+
+.date-side--right {
+  align-items: flex-start;
+}
+
+.date-line {
+  display: block;
+  width: 100%;
+  max-width: clamp(40px, 12vw, 56px);
+  height: 1px;
+  background: var(--navy);
+  opacity: 0.55;
+}
+
+.date-label {
+  font-family: var(--font-display);
+  font-size: clamp(0.72rem, 2.8vw, 0.92rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.date-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: clamp(72px, 22vw, 96px);
+  flex-shrink: 0;
+}
+
+.date-month,
+.date-year {
+  font-family: var(--font-display);
+  font-size: clamp(0.75rem, 2.4vw, 0.9rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--navy);
+}
+
+.date-day {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 11vw, 3.4rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+  margin: 0.08rem 0;
+}
+
+@media (min-width: 480px) {
+  .invitation-card__body {
+    padding: 2.5rem 2rem 2rem;
+  }
+}
+
+@media (max-height: 680px) {
+  .invitation-card__inner {
+    min-height: auto;
+  }
+
+  .invitation-card__date {
+    flex: 0;
+  }
+}
