@@ -5,7 +5,7 @@ import { QRCodeSVG } from 'qrcode.react'
 import './VenueSection.css'
 
 const VENUE_MAPS_URL =
-  'https://maps.google.com/?q=Krushi+Bhavan+Opp+Boat+Club+Kakinada'
+  'https://www.google.com/maps/place/Anjuman+palace+ilkal/@15.960164,76.1206263,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb80dd6df27efd7:0x936666ef468fa0c8!8m2!3d15.9601589!4d76.1232012!16s%2Fg%2F11h54mbyqd?entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D'
 
 export const venueBlock = {
   hidden: { opacity: 0, y: 14 },
@@ -56,10 +56,10 @@ export default function VenueSection() {
     >
       <motion.div className="venue-section__divider" variants={venueItem} />
       <motion.h3 className="venue-section__name" variants={venueItem}>
-        Krushi Bhavan
+        Anjuman shadi hall
       </motion.h3>
       <motion.p className="venue-section__address" variants={venueItem}>
-        Opp Boat Club, Kakinada
+        Near Murtuz Quadri Dargah, Ilkal
       </motion.p>
 
       <motion.div className="venue-section__qr" variants={venueItem}>

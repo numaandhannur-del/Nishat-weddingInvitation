@@ -21,8 +21,8 @@ const greatVibes = Great_Vibes({
 })
 
 export const metadata = {
-  title: 'Mohana & Rahul — Engagement',
-  description: 'Engagement Ceremony Invitation — July 4, 2026, Krushi Bhavan, Kakinada',
+  title: 'Nishat & Shamshu Tabrez — Wedding',
+  description: 'Wedding Ceremony Invitation — October 8, 2026, Anjuman Shadi Hall, Ilkal',
 }
 
 export default function RootLayout({ children }) {

@@ -47,8 +47,8 @@ export default function WelcomeHero({ onOpen }) {
         </svg>
       </div>
 
-      <h2 className="welcome-hero__names">Mohana & Rahul</h2>
-      <p className="welcome-hero__label">Engagement Invitation</p>
+      <h2 className="welcome-hero__names">Nishat & Shamshu Tabrez</h2>
+      <p className="welcome-hero__label">Wedding Invitation</p>
 
       <div className="welcome-hero__actions">
         <motion.button

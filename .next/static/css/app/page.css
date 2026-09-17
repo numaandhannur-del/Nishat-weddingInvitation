@@ -1,0 +1,856 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/BackgroundVideo.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.bg-video {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2d0a23 0%, #0f2318 50%, #140f2d 100%);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.bg-video--active {
+  opacity: 1;
+}
+
+.bg-video__palace {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3) saturate(0.7);
+}
+
+.bg-video__layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  animation: slowZoom 24s ease-in-out infinite alternate;
+}
+
+.bg-video__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(45, 10, 35, 0.8) 0%,
+    rgba(15, 35, 25, 0.75) 45%,
+    rgba(20, 15, 45, 0.82) 100%
+  );
+  z-index: 1;
+}
+
+.bg-video__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.55) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/Sparkles.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.sparkles {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e8d5a3 0%, transparent 70%);
+  box-shadow: 0 0 6px 1px rgba(201, 168, 76, 0.4);
+}
+
+.sparkle--gold {
+  background: radial-gradient(circle, #f0e0b0 0%, transparent 70%);
+  box-shadow: 0 0 8px 2px rgba(201, 168, 76, 0.5);
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/ArchFrame.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.arch-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/VenueSection.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.venue-section {
+  text-align: center;
+  padding-top: 0.35rem;
+  position: relative;
+  z-index: 5;
+}
+
+.venue-section__divider {
+  width: clamp(44px, 12vw, 56px);
+  height: 1px;
+  background: var(--navy);
+  opacity: 0.35;
+  margin: 0.4rem auto 0.75rem;
+}
+
+.venue-section__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+
+.venue-section__address {
+  font-family: var(--font-serif);
+  font-size: clamp(0.88rem, 2.8vw, 1rem);
+  color: var(--navy);
+  opacity: 0.82;
+  margin-bottom: clamp(0.65rem, 2vw, 0.9rem);
+}
+
+.venue-section__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: clamp(0.75rem, 2.5vw, 1rem);
+}
+
+.qr-wrapper {
+  padding: 8px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid rgba(26, 45, 90, 0.08);
+  box-shadow: 0 3px 14px rgba(26, 45, 90, 0.1);
+}
+
+.qr-image,
+.qr-svg {
+  display: block;
+  width: clamp(100px, 28vw, 128px);
+  height: clamp(100px, 28vw, 128px);
+  object-fit: contain;
+}
+
+.qr-label {
+  font-family: var(--font-serif);
+  font-size: clamp(0.65rem, 2vw, 0.72rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  opacity: 0.6;
+}
+
+.maps-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: clamp(0.7rem, 2.5vw, 0.85rem) clamp(1.25rem, 4vw, 1.65rem);
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--navy) 0%, #2a4078 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: clamp(0.82rem, 2.8vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  box-shadow: 0 3px 14px rgba(26, 45, 90, 0.25);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.maps-btn:hover {
+  box-shadow: 0 5px 20px rgba(26, 45, 90, 0.35);
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.maps-btn__icon {
+  width: clamp(16px, 4.5vw, 18px);
+  height: clamp(16px, 4.5vw, 18px);
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.maps-btn__text {
+  white-space: nowrap;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/InvitationCard.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.invitation-card {
+  width: 100%;
+  position: relative;
+}
+
+.invitation-card__glow {
+  position: absolute;
+  inset: -8%;
+  background: radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.invitation-card__inner {
+  position: relative;
+  background: var(--cream);
+  border-radius: 12px;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(201, 168, 76, 0.12);
+  overflow: hidden;
+  min-height: calc(100dvh - max(1.5rem, env(safe-area-inset-top)) - max(1.5rem, env(safe-area-inset-bottom)));
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation-card__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.6s ease;
+}
+
+.invitation-card__bg--ready {
+  opacity: 0.14;
+}
+
+.invitation-card__wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 248, 245, 0.94) 0%,
+    rgba(250, 248, 245, 0.9) 50%,
+    rgba(250, 248, 245, 0.93) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.invitation-card__body {
+  position: relative;
+  z-index: 3;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: clamp(0.35rem, 1.5vw, 0.65rem);
+  padding: clamp(1.5rem, 4vw, 2.25rem) clamp(1.25rem, 4vw, 2rem) clamp(1.25rem, 3.5vw, 1.75rem);
+}
+
+.invitation-card__body > * {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.rings-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.rings-icon svg {
+  width: clamp(64px, 16vw, 80px);
+  height: auto;
+}
+
+.invitation-card__header {
+  font-family: var(--font-display);
+  font-size: clamp(0.65rem, 2.2vw, 0.78rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+}
+
+.invitation-card__names {
+  font-family: var(--font-script);
+  font-size: clamp(2.4rem, 9.5vw, 3.4rem);
+  color: var(--navy);
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: clamp(0.2rem, 0.8vw, 0.35rem);
+}
+
+.invitation-card__sub,
+.invitation-card__celebrate {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 2.8vw, 1.05rem);
+  color: var(--navy);
+  opacity: 0.88;
+  line-height: 1.45;
+}
+
+.invitation-card__celebrate {
+  margin-bottom: clamp(0.75rem, 2.5vw, 1.1rem);
+  font-style: italic;
+}
+
+.invitation-card__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 2.5vw, 1rem);
+  margin-bottom: clamp(0.35rem, 1.5vw, 0.6rem);
+}
+
+.date-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 1 1;
+  min-width: 0;
+}
+
+.date-side--left {
+  align-items: flex-end;
+}
+
+.date-side--right {
+  align-items: flex-start;
+}
+
+.date-line {
+  display: block;
+  width: 100%;
+  max-width: clamp(40px, 12vw, 56px);
+  height: 1px;
+  background: var(--navy);
+  opacity: 0.55;
+}
+
+.date-label {
+  font-family: var(--font-display);
+  font-size: clamp(0.72rem, 2.8vw, 0.92rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.date-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: clamp(72px, 22vw, 96px);
+  flex-shrink: 0;
+}
+
+.date-month,
+.date-year {
+  font-family: var(--font-display);
+  font-size: clamp(0.75rem, 2.4vw, 0.9rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--navy);
+}
+
+.date-day {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 11vw, 3.4rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+  margin: 0.08rem 0;
+}
+
+@media (min-width: 480px) {
+  .invitation-card__body {
+    padding: 2.5rem 2rem 2rem;
+  }
+}
+
+@media (max-height: 680px) {
+  .invitation-card__inner {
+    min-height: auto;
+  }
+
+  .invitation-card__date {
+    flex: 0 1;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/CornerFloralDecor.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.corner-floral {
+  position: absolute;
+  width: clamp(70px, 18vw, 100px);
+  height: clamp(58px, 15vw, 82px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.corner-floral--top-left { top: 4px; left: 4px; }
+.corner-floral--top-right { top: 4px; right: 4px; transform: scaleX(-1); }
+.corner-floral--bottom-left { bottom: 4px; left: 4px; transform: scaleY(-1); }
+.corner-floral--bottom-right { bottom: 4px; right: 4px; transform: scale(-1); }
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/OpeningCurtain.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.curtain__palace-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.35) saturate(0.8);
+}
+
+.curtain__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(15, 26, 58, 0.88) 0%,
+    rgba(26, 45, 90, 0.82) 50%,
+    rgba(15, 26, 58, 0.9) 100%
+  );
+  z-index: 1;
+}
+
+.curtain__corner {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgba(201, 168, 76, 0.45);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.curtain__corner--tl { top: 1rem; left: 1rem; border-right: none; border-bottom: none; border-radius: 8px 0 0 0; }
+.curtain__corner--tr { top: 1rem; right: 1rem; border-left: none; border-bottom: none; border-radius: 0 8px 0 0; }
+.curtain__corner--bl { bottom: 1rem; left: 1rem; border-right: none; border-top: none; border-radius: 0 0 0 8px; }
+.curtain__corner--br { bottom: 1rem; right: 1rem; border-left: none; border-top: none; border-radius: 0 0 8px 0; }
+
+.curtain__panel {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a1228 0%, var(--navy) 50%, #1e3560 100%);
+  z-index: 10;
+}
+
+.curtain__panel--left { left: 0; box-shadow: 6px 0 40px rgba(0, 0, 0, 0.4); }
+.curtain__panel--right { right: 0; box-shadow: -6px 0 40px rgba(0, 0, 0, 0.4); }
+
+.curtain__logo {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  color: var(--white);
+  padding: 0 1.5rem;
+}
+
+.curtain__rings {
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 6px 20px rgba(201, 168, 76, 0.35));
+}
+
+.curtain__rings svg {
+  width: clamp(100px, 26vw, 140px);
+  height: auto;
+}
+
+.curtain__names {
+  font-family: var(--font-script);
+  font-size: clamp(2.4rem, 9vw, 3.8rem);
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.curtain__text {
+  font-family: var(--font-serif);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+
+.curtain__welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+  min-height: 36px;
+}
+
+.curtain__welcome-line {
+  position: relative;
+  width: clamp(80px, 28vw, 120px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201, 168, 76, 0.3) 15%,
+    var(--gold) 50%,
+    rgba(201, 168, 76, 0.3) 85%,
+    transparent 100%
+  );
+  transform-origin: center;
+}
+
+.curtain__welcome-line::before,
+.curtain__welcome-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.6);
+}
+
+.curtain__welcome-line::before {
+  left: calc(50% - clamp(40px, 14vw, 60px) - 2px);
+}
+
+.curtain__welcome-line::after {
+  right: calc(50% - clamp(40px, 14vw, 60px) - 2px);
+}
+
+.curtain__welcome-greeting {
+  font-family: var(--font-script);
+  font-size: clamp(1.1rem, 3.5vw, 1.45rem);
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+.curtain__welcome-sparkles {
+  position: relative;
+  width: clamp(120px, 40vw, 180px);
+  height: 14px;
+}
+
+.curtain__welcome-sparkle {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  margin-top: -2px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 6px rgba(201, 168, 76, 0.7);
+}
+
+@media (max-width: 380px) {
+  .curtain__corner { width: 55px; height: 55px; }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/WelcomeHero.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.welcome-hero {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: #ffffff;
+}
+
+.welcome-hero__border {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-color: rgba(201, 168, 76, 0.45);
+  border-style: solid;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.welcome-hero__border--tl { top: 1.25rem; left: 1.25rem; border-width: 2px 0 0 2px; }
+.welcome-hero__border--tr { top: 1.25rem; right: 1.25rem; border-width: 2px 2px 0 0; }
+.welcome-hero__border--bl { bottom: 1.25rem; left: 1.25rem; border-width: 0 0 2px 2px; }
+.welcome-hero__border--br { bottom: 1.25rem; right: 1.25rem; border-width: 0 2px 2px 0; }
+
+.welcome-hero__greeting {
+  font-family: var(--font-script);
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  color: var(--gold-light);
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 11vw, 4.2rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, var(--gold-light) 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.welcome-hero__subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 3vw, 1.05rem);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 320px;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.welcome-hero__rings {
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 4px 16px rgba(201, 168, 76, 0.4));
+}
+
+.welcome-hero__rings svg {
+  width: clamp(90px, 22vw, 120px);
+  height: auto;
+}
+
+.welcome-hero__names {
+  font-family: var(--font-script);
+  font-size: clamp(2.4rem, 9vw, 3.8rem);
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-hero__label {
+  font-family: var(--font-display);
+  font-size: clamp(0.6rem, 2vw, 0.75rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.welcome-hero__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-hero__btn {
+  position: relative;
+  overflow: hidden;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  font-family: var(--font-display);
+  font-size: clamp(0.8rem, 2.6vw, 0.95rem);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(26, 45, 90, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-hero__btn:hover {
+  background: rgba(26, 45, 90, 0.72);
+  border-color: rgba(201, 168, 76, 0.55);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-hero__btn-border {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 168, 76, 0.15) 0%,
+    rgba(201, 168, 76, 0.45) 50%,
+    rgba(201, 168, 76, 0.15) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.welcome-hero__btn-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 1px solid rgba(201, 168, 76, 0.5);
+  pointer-events: none;
+  animation: btnRingExpand 2s ease-out infinite;
+}
+
+.welcome-hero__btn--hint {
+  animation: btnHintPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes btnHintPulse {
+  0%, 100% {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    border-color: rgba(201, 168, 76, 0.35);
+  }
+  50% {
+    box-shadow:
+      0 4px 22px rgba(0, 0, 0, 0.32),
+      0 0 18px rgba(201, 168, 76, 0.3);
+    border-color: rgba(201, 168, 76, 0.75);
+  }
+}
+
+@keyframes btnRingExpand {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70%, 100% {
+    transform: scale(1.12);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .welcome-hero__btn {
+    padding: 0.8rem 1.75rem;
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./components/InvitationApp.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+.app__content {
+  position: relative;
+  z-index: 60;
+  width: 100%;
+  max-width: min(98vw, 560px);
+  padding: 0.35rem 0.5rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-height: calc(100dvh - max(1.5rem, env(safe-area-inset-top)) - max(1.5rem, env(safe-area-inset-bottom)));
+}
+
+.card-scene-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.card-scene-bg__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.45;
+  animation: orbFloat 12s ease-in-out infinite;
+}
+
+.card-scene-bg__orb--1 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.35) 0%, transparent 70%);
+  top: 10%;
+  left: -8%;
+  animation-delay: 0s;
+}
+
+.card-scene-bg__orb--2 {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(196, 92, 122, 0.25) 0%, transparent 70%);
+  bottom: 15%;
+  right: -5%;
+  animation-delay: -4s;
+}
+
+.card-scene-bg__orb--3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(42, 64, 120, 0.4) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  margin-top: -90px;
+  margin-left: -90px;
+  animation-delay: -7s;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(12px, -18px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.95); }
+}
+
+@media (min-width: 480px) {
+  .app__content {
+    padding: 0.5rem 0.75rem;
+    max-width: min(96vw, 580px);
+  }
+}
+

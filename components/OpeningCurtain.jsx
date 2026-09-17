@@ -60,7 +60,7 @@ export default function OpeningCurtain({ onComplete }) {
           </svg>
         </div>
 
-        <p className="curtain__names">Mohana & Rahul</p>
+        <p className="curtain__names">Nishat & Shamshu Tabrez</p>
         <p className="curtain__text">You&apos;re invited</p>
 
         <div className="curtain__welcome" aria-hidden="true">

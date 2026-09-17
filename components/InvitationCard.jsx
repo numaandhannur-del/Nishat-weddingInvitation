@@ -123,13 +123,13 @@ export default function InvitationCard() {
           </motion.div>
 
           <motion.h2 className="invitation-card__header" variants={textReveal}>
-            Engagement Ceremony
+            Wedding Ceremony
           </motion.h2>
           <motion.p className="invitation-card__names" variants={textReveal}>
-            Mohana & Rahul
+            Nishat & Shamshu Tabrez
           </motion.p>
           <motion.p className="invitation-card__sub" variants={textReveal}>
-            are getting engaged
+            are getting married
           </motion.p>
           <motion.p className="invitation-card__celebrate" variants={textReveal}>
             Let&apos;s get together to celebrate
@@ -143,16 +143,16 @@ export default function InvitationCard() {
           >
             <motion.div className="date-side date-side--left" variants={sideRevealLeft}>
               <span className="date-line" />
-              <span className="date-label">Saturday</span>
+              <span className="date-label">Thursday</span>
               <span className="date-line" />
             </motion.div>
 
             <div className="date-center">
               <motion.span className="date-month" variants={dateReveal}>
-                July
+                October
               </motion.span>
               <motion.span className="date-day" variants={dateReveal}>
-                04
+                08
               </motion.span>
               <motion.span className="date-year" variants={dateReveal}>
                 2026
@@ -161,7 +161,7 @@ export default function InvitationCard() {
 
             <motion.div className="date-side date-side--right" variants={sideRevealRight}>
               <span className="date-line" />
-              <span className="date-label">10:08 AM</span>
+              <span className="date-label">12:15 PM</span>
               <span className="date-line" />
             </motion.div>
           </motion.div>

@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/apple/Documents/NN/Nishat-weddingInvitation/app/layout\":[\"static/media/e18f83c737786aa7-s.p.woff2\",\"static/media/7b89a4fd5e90ede0-s.p.woff2\",\"static/media/87069f06a4f1ee13-s.p.woff2\",\"static/media/eaead17c7dbfcd5d-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
